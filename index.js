@@ -6,20 +6,46 @@ const inquirer = require('inquirer');
 const questions = [
     {
         type: 'input',
-        message: 'What is your user name?',
-        name: 'username',
+        message: 'What is your project called?',
+        name: 'title'
+    },
+    {
+        type: 'input',
+        message: 'What is the description of your project?',
+        name: 'description'
+    },
+    {
+        type: 'input',
+        message: 'What are the instructions for installing your project',
+        name: 'installation'
+    },
+    {
+        type: 'input',
+        message: 'What are the usage information?',
+        name: 'usage'
+    },
+    {
+        type: 'list',
+        message: 'What license are you using?',
+        name: 'license',
+        choices: [ 'MIT', 'ISC', 'None']
     },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.readFile('README.md', 'utf8', (error, data) =>
-  error ? console.error(error) : console.log(data)
+    fs.appendFile('README.md', data, (error, data) =>
+  error ? console.error(error) : console.log("Success!")
 );
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+  .prompt(
+    questions
+  )
+}
 
 // Function call to initialize app
 init();
