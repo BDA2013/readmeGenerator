@@ -34,8 +34,8 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.appendFile('README.md', data, (error, data) =>
-  error ? console.error(error) : console.log("Success!")
+    fs.appendFile(fileName, data, (error, data) =>
+  error ? console.error(error) : console.log(data)
 );
 }
 
