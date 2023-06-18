@@ -1,24 +1,17 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  switch (license) {
-    case 'MIT':
-      return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
-    default:
-      return ``;
-  }
-}
+# READMEGenerator
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+  ## Description
+  
+  Blah
+  
+  ## Installation
+  Blah
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  switch (license) {
-    case 'MIT':
-      return `MIT License
+  ## Credits
+  Brandon Alexander
+  
+  ## License
+  MIT License
 
       Copyright (c) 2023 Brandon Alexander
       
@@ -38,29 +31,7 @@ function renderLicenseSection(license) {
       AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
       LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
       OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-      SOFTWARE.`;
-
-    case 'ISC':
-      return ``
-  }
-}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-
-  ## Description
-  
-  ${data.description}
-  
-  ## Installation
-  ${data.installation}
-
-  ## Credits
-  ${data.credit}
-  
-  ## License
-  ${renderLicenseSection(data.license)}
+      SOFTWARE.
   
   ---
   
@@ -75,7 +46,10 @@ function generateMarkdown(data) {
   ## Features
   
   If your project has a lot of features, list them here.
-`;
-}
-
-module.exports = generateMarkdown;
+  
+  ## How to Contribute
+  
+  If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+  
+  ## Tests
+  

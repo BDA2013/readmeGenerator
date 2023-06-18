@@ -51,6 +51,8 @@ function init() {
   .prompt(
     questions
   )
+  .then((data) =>
+  writeToFile('./README.md', data));
 }
 
 // Function call to initialize app
