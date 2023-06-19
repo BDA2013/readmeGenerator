@@ -29,8 +29,9 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license, creator) {
   switch (license) {
     case 'MIT':
-      return `MIT License
-      ${renderLicenseLink(license)}
+      return `## License
+      
+      MIT License: ${renderLicenseLink(license)}
 
       Copyright (c) 2023 ${creator}
       
@@ -53,8 +54,9 @@ function renderLicenseSection(license, creator) {
       SOFTWARE.`;
 
     case 'ISC':
-      return `ISC License
-      ${renderLicenseLink(license)}
+      return `## License
+      
+      ISC License: ${renderLicenseLink(license)}
       
       Copyright 2023 ${creator}
 
@@ -83,7 +85,6 @@ function generateMarkdown(data) {
   ## Credits
   ${data.credit}
   
-  ## License
   ${renderLicenseSection(data.license, data.credit)}
   
   ## Badges
