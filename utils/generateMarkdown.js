@@ -23,9 +23,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license, creator) {
   switch (license) {
     case 'MIT':
-      return `## License
-      
-      MIT License: ${renderLicenseLink(license)}
+      return `MIT License: ${renderLicenseLink(license)}
 
       Copyright (c) 2023 ${creator}
       
@@ -48,9 +46,7 @@ function renderLicenseSection(license, creator) {
       SOFTWARE.`;
 
     case 'ISC':
-      return `## License
-      
-      ISC License: ${renderLicenseLink(license)}
+      return `ISC License: ${renderLicenseLink(license)}
       
       Copyright 2023 ${creator}
 
@@ -67,23 +63,40 @@ function renderLicenseSection(license, creator) {
 }
 
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `${renderLicenseBadge(data.license)}
 
-  ## Description
+  # ${data.title}
+
+  ## Table of Contents
+  * [Description](#desctiption)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [License](#license)
+  * [Badge](#badge)
+  * [Questions](#questions)
+
+  ## Description <a name="description"></a>
   ${data.description}
   
-  ## Installation
+  ## Installation <a name="installation"></a>
   ${data.installation}
 
-  ## Credits
+  ## Usage <a name="usage"></a>
+  ${data.usage}
+
+  ## Credits <a name="credits"></a>
   ${data.credit}
   
-  ${renderLicenseSection(data.license, data.credit)}
+  ## License <a name="license"></a>
+  ${renderLicenseSection(data.license, data.username)}
   
-  ## Badges
-  ${renderLicenseBadge(data.license)}
-
+  ## Badge <a name="badge"></a>
   ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+
+  ## Questions <a name="questions"></a>
+  You can email me at <${data.email}> for more questions.
+  The link to my profile is https://github.com/${data.username}
 `;
 }
 

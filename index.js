@@ -20,13 +20,23 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Who created this repo?',
+        message: 'What is the usage your project',
+        name: 'usage'
+    },
+    {
+        type: 'input',
+        message: 'Who created this project',
         name: 'credit'
     },
     {
         type: 'input',
-        message: 'What are the usage information?',
-        name: 'usage'
+        message: 'What is your GitHub username?',
+        name: 'username'
+    },
+    {
+        type: 'input',
+        message: 'What is your e-mail address?',
+        name: 'email'
     },
     {
         type: 'list',
