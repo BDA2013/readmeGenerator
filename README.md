@@ -9,7 +9,5 @@ This is a generator that will format the README file for you based on the inputs
 
 
 ## Note
-
-
-Link for the repo: https://github.com/BDA2013/readmeGenerator
-Link for the video: https://drive.google.com/file/d/1kMJuJv1BW1iNyjTn_M6PUsW2e6atRD0G/view
+Link for the repo: https://github.com/BDA2013/readmeGenerator </br>
+Link for the video: https://drive.google.com/file/d/1kMJuJv1BW1iNyjTn_M6PUsW2e6atRD0G/view?usp=sharing
