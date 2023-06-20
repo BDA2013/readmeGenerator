@@ -68,33 +68,33 @@ function generateMarkdown(data) {
   # ${data.title}
 
   ## Table of Contents
-  * [Description](##Desctiption)
-  * [Installation](##Installation)
-  * [Usage](##Usage)
-  * [Credits](##Credits)
-  * [License](##License)
-  * [Badge](##Badge)
-  * [Questions](##Questions)
+  * [Description](#desctiption)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [License](#license)
+  * [Badge](#badge)
+  * [Questions](#questions)
 
-  ## Description
+  ## Description <a name="description"></a>
   ${data.description}
   
-  ## Installation
+  ## Installation <a name="installation"></a>
   ${data.installation}
 
-  ## Usage
+  ## Usage <a name="usage"></a>
   ${data.usage}
 
-  ## Credits
+  ## Credits <a name="credits"></a>
   ${data.credit}
   
-  ## License
+  ## License <a name="license"></a>
   ${renderLicenseSection(data.license, data.username)}
   
-  ## Badge
+  ## Badge <a name="badge"></a>
   ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
 
-  ## Questions
+  ## Questions <a name="questions"></a>
   You can email me at <${data.email}> for more questions.
   The link to my profile is https://github.com/${data.username}
 `;
